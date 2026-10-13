@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoner &mdash; Support</title>
+    <style>
+        :root {
+            --blue: #007AFF;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .back {
+            display: inline-block;
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+        .back:hover { text-decoration: underline; }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .lede {
+            color: var(--secondary);
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .card h2 { font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 16px;
+            margin-bottom: 6px;
+        }
+        .card h3:first-of-type { margin-top: 0; }
+        .card p {
+            color: var(--secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .card ul {
+            color: var(--secondary);
+            font-size: 15px;
+            padding-left: 22px;
+            margin-bottom: 12px;
+        }
+        .card li { margin-bottom: 6px; }
+        .card a { color: var(--blue); }
+        .card a.button {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            margin-top: 8px;
+        }
+        .card a.button:hover { opacity: 0.85; }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Back to Zoner</a>
+        <h1>Support</h1>
+        <p class="lede">Getting started, common questions, and how to get in touch.</p>
+
+        <div class="card">
+            <h2>Requirements</h2>
+            <ul>
+                <li>iPhone or iPad running iOS 26 or later, or a Mac running macOS 26 or later</li>
+                <li>A Tradier API token for market data (a free sandbox token gives delayed data; a production token comes with a Tradier brokerage account)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Getting Started</h2>
+            <h3>1. Add your Tradier token</h3>
+            <p>Open <strong>Settings &rarr; Tradier</strong>, choose the Account type that matches your token (<strong>Sandbox</strong> or <strong>Production</strong>), and paste the token. It&rsquo;s stored only in your device&rsquo;s Keychain.</p>
+            <h3>2. Enter a symbol</h3>
+            <p>Type a symbol in the field at the top of the list and press Return. Its chart appears with its supply and demand zones, and the symbol joins your list of the last 50 you entered.</p>
+            <h3>3. Choose a timeframe</h3>
+            <p>The switch above the chart picks the candles: <strong>M W D 1h 15m 5m 1m</strong> (on iPhone, a menu). The expand button in the chart&rsquo;s corner shows it full screen.</p>
+            <h3>4. Not ready for a token yet?</h3>
+            <p>Tap <strong>Try with Sample Data</strong> in the list (or in Settings &rarr; Tradier) to explore every timeframe with made-up prices.</p>
+        </div>
+
+        <div class="card">
+            <h2>FAQ</h2>
+
+            <h3>It says Tradier rejected the token, or to add a token</h3>
+            <p>Check that the Account setting matches the token: sandbox tokens only work with Sandbox, and production tokens only with Production. Use the eye button in Settings to check the saved token for typos.</p>
+
+            <h3>&ldquo;Tradier has no price history&rdquo; for a symbol</h3>
+            <p>Check the spelling. Zoner charts what Tradier carries: US stocks and funds. Share classes need their class letter, for example BRK.B (BRK/B works too).</p>
+
+            <h3>What are the shaded and outlined bands?</h3>
+            <p>Shaded bands are the chart&rsquo;s own <strong>supply and demand zones</strong>: places where price paused for one to six candles before leaving sharply. Demand zones (price rallied away) use the up-candle color; supply zones (price dropped away) the down-candle color. <strong>Dashed outlines</strong> are the next timeframe up&rsquo;s zones, labeled with its letter: M, W, D, H, 15m or 5m. Yellow circles mark where price came back to a zone, and fainter zones are <strong>weak</strong>: price didn&rsquo;t leave them cleanly.</p>
+
+            <h3>An intraday chart has few candles or none</h3>
+            <p>The hourly and minute charts cover the regular session, 9:30 to 4:00 New York time, over the last 20 to 40 days that Tradier keeps. Over a weekend or holiday they end at the last session. Tap <strong>Refresh</strong> (&#8984;R on a keyboard) for the latest prices.</p>
+
+            <h3>The times don&rsquo;t match my clock</h3>
+            <p>Intraday times are shown in New York time unless <strong>Settings &rarr; Charts &rarr; Intraday Times</strong> is set to Local Time.</p>
+
+            <h3>The zones differ from another charting app</h3>
+            <p>Zoner draws zones by fixed rules on Tradier&rsquo;s prices. Some tools draw a zone&rsquo;s near edge at the candles&rsquo; wicks; turn on <strong>Wicks</strong> above the chart to do the same.</p>
+
+            <h3>How do I remove a symbol from the list?</h3>
+            <p>Swipe it (on the Mac, right-click it and choose <strong>Remove</strong>). Entering a symbol again moves it back to the top of the list.</p>
+
+            <h3>What&rsquo;s kept if I delete the app?</h3>
+            <p>On an <strong>iPhone or iPad</strong>, deleting the app erases your list of symbols and your settings on that device. Your <strong>Tradier token is kept</strong> in the Keychain and usually comes back after reinstalling; tap <strong>Remove</strong> in <strong>Settings &rarr; Tradier</strong> first if you don&rsquo;t want that. On the <strong>Mac</strong>, deleting the app keeps everything.</p>
+
+            <h3>Does the app place trades?</h3>
+            <p>No. Zoner only reads market data. It never places orders, reads account balances or positions, or moves money.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact &amp; Bug Reports</h2>
+            <p>The fastest way to report a bug, request a feature, or ask a question is to open a GitHub issue.</p>
+            <a href="https://github.com/ayefon/Zoner/issues" class="button">Open a GitHub Issue</a>
+        </div>
+
+        <footer>
+            <p>Zoner is an analysis tool, not investment advice.</p>
+            <p style="margin-top: 8px;">&copy; 2026 Don Babcock. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html" style="color: var(--blue); text-decoration: none;">Home</a> &middot;
+                <a href="privacy.html" style="color: var(--blue); text-decoration: none;">Privacy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

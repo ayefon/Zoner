@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoner &mdash; Privacy Policy</title>
+    <style>
+        :root {
+            --blue: #007AFF;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        .back {
+            display: inline-block;
+            color: var(--blue);
+            text-decoration: none;
+            font-size: 15px;
+            margin-bottom: 24px;
+        }
+        .back:hover { text-decoration: underline; }
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .updated {
+            color: var(--secondary);
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .card h2 { font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+        .card p {
+            color: var(--secondary);
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        .card p:last-child { margin-bottom: 0; }
+        .card ul {
+            color: var(--secondary);
+            font-size: 15px;
+            padding-left: 22px;
+            margin-bottom: 12px;
+        }
+        .card li { margin-bottom: 6px; }
+        .card a { color: var(--blue); }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Back to Zoner</a>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: October 13, 2026</p>
+
+        <div class="card">
+            <h2>The Short Version</h2>
+            <p>Zoner does not collect, store, sell, or share any personal information. There are no accounts, no analytics, no advertising, and no tracking. The developer never receives any of your data.</p>
+        </div>
+
+        <div class="card">
+            <h2>What Stays on Your Device</h2>
+            <ul>
+                <li>Your Tradier API token is stored in your device&rsquo;s Keychain, on that device only (not synced).</li>
+                <li>Your list of recent symbols and your settings are stored on your device only.</li>
+                <li>Price data is kept in memory and is gone when the app quits.</li>
+            </ul>
+            <p>Deleting the app removes all of it.</p>
+        </div>
+
+        <div class="card">
+            <h2>Who the App Talks To</h2>
+            <p>To show market data, the app sends requests directly from your device, with no server in between, to <strong>Tradier</strong>, for price history and quotes, using your token.</p>
+            <p>Those requests contain the stock symbols being looked up and your token, and are governed by Tradier&rsquo;s own privacy policy. The app only reads market data; it does not place trades or access account balances or positions.</p>
+        </div>
+
+        <div class="card">
+            <h2>What Zoner Does Not Do</h2>
+            <ul>
+                <li>No analytics or telemetry</li>
+                <li>No crash reporting services</li>
+                <li>No advertising or tracking SDKs</li>
+                <li>No user accounts or sign-in</li>
+                <li>No access to location, camera, microphone, contacts, photos, calendar, health, or motion data</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Children</h2>
+            <p>Zoner is not directed at children and does not knowingly collect any information from anyone, including children under 13.</p>
+        </div>
+
+        <div class="card">
+            <h2>Changes to This Policy</h2>
+            <p>If this policy changes, the updated version will be posted on this page with a new &ldquo;Last updated&rdquo; date.</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Questions about privacy? Open an issue at <a href="https://github.com/ayefon/Zoner/issues">github.com/ayefon/Zoner/issues</a>.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Don Babcock. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="index.html" style="color: var(--blue); text-decoration: none;">Home</a> &middot;
+                <a href="support.html" style="color: var(--blue); text-decoration: none;">Support</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
