@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoner</title>
+    <style>
+        :root {
+            --blue: #007AFF;
+            --bg: #f9fafb;
+            --card: #ffffff;
+            --text: #1d1d1f;
+            --secondary: #6e6e73;
+            --border: #e5e7eb;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        header { text-align: center; margin-bottom: 48px; }
+        .icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .tagline { color: var(--secondary); font-size: 17px; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+        .card h2 { font-size: 20px; font-weight: 600; margin-bottom: 12px; }
+        .card p { color: var(--secondary); font-size: 15px; margin-bottom: 12px; }
+        .card p:last-child { margin-bottom: 0; }
+        .card a { color: var(--blue); }
+        .links {
+            display: flex;
+            gap: 12px;
+            margin-top: 32px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .links a {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: opacity 0.2s;
+        }
+        .links a:hover { opacity: 0.85; }
+        .links .primary { background: var(--blue); color: white; }
+        .links .secondary-link {
+            background: var(--card);
+            color: var(--blue);
+            border: 1px solid var(--border);
+        }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            color: var(--secondary);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Zoner</h1>
+            <p class="tagline">For iPhone, iPad and Mac</p>
+        </header>
+        <div class="card">
+            <h2>Coming soon</h2>
+            <p>Zoner charts any symbol with its supply and demand zones, from Monthly to 1 Minute, each chart showing the next timeframe up's zones too. It only reads market data, with your own Tradier account.</p>
+            <p>Support and privacy pages for the app will be here soon.</p>
+        </div>
+    </div>
+</body>
+</html>
