@@ -107,10 +107,12 @@
             <h3>1. Add your Tradier token</h3>
             <p>Open <strong>Settings &rarr; Tradier</strong>, choose the Account type that matches your token (<strong>Sandbox</strong> or <strong>Production</strong>), and paste the token. It&rsquo;s stored only in your device&rsquo;s Keychain.</p>
             <h3>2. Enter a symbol</h3>
-            <p>Type a symbol in the field at the top of the list and press Return. Its chart appears with its supply and demand zones, and the symbol joins your list of the last 50 you entered.</p>
+            <p>Type a symbol in the field at the top of the list and press Return. Its chart appears with its supply and demand zones, and the symbol joins your list of the last 50 you entered. To add several at once, separate them with commas or spaces.</p>
             <h3>3. Choose a timeframe</h3>
             <p>The switch above the chart picks the candles: <strong>M W D 1h 15m 5m 1m</strong> (on iPhone, a menu). The expand button in the chart&rsquo;s corner shows it full screen.</p>
-            <h3>4. Not ready for a token yet?</h3>
+            <h3>4. Look further back</h3>
+            <p>Each chart searches back a year for zones (<strong>Settings &rarr; Charts &rarr; Zone Search</strong>, up to seven years) and opens on its recent candles. Drag the <strong>strip</strong> under the chart to scroll back, or drag its edges to show more or fewer candles; drag up or down on the <strong>prices</strong> at the left to see zones above or below. Under the chart, <strong>Nearest supply</strong> and <strong>Nearest demand</strong> name the closest zone each way, on screen or not.</p>
+            <h3>5. Not ready for a token yet?</h3>
             <p>Tap <strong>Try with Sample Data</strong> in the list (or in Settings &rarr; Tradier) to explore every timeframe with made-up prices.</p>
         </div>
 
@@ -135,8 +137,17 @@
             <h3>The zones differ from another charting app</h3>
             <p>Zoner draws zones by fixed rules on Tradier&rsquo;s prices. Some tools draw a zone&rsquo;s near edge at the candles&rsquo; wicks; turn on <strong>Wicks</strong> above the chart to do the same.</p>
 
+            <h3>A zone I expected isn&rsquo;t on the chart</h3>
+            <p>Zoner shows only zones price hasn&rsquo;t closed through, found back as far as <strong>Zone Search</strong> reaches (a year unless you change it). Drag the strip under the chart to scroll back, drag the prices to look above or below, or check the <strong>Nearest</strong> lines under the chart.</p>
+
+            <h3>Exported zones don&rsquo;t show in thinkorswim or TradingView</h3>
+            <p>Check that the chart there is the <strong>same symbol</strong> and one of Zoner&rsquo;s seven timeframes (Monthly, Weekly, Daily, 1 hour, 15, 5 or 1 minute). The script is a snapshot: if a zone is missing that Zoner shows today, export it again.</p>
+
+            <h3>There&rsquo;s no IV gauge under the chart</h3>
+            <p>The reason is shown there. The gauge needs options listed around 30 days out, and at least 282 days of prices (about 14 months), so recently listed stocks have none yet.</p>
+
             <h3>How do I remove a symbol from the list?</h3>
-            <p>Swipe it (on the Mac, right-click it and choose <strong>Remove</strong>). Entering a symbol again moves it back to the top of the list.</p>
+            <p>Swipe it (on the Mac, right-click it and choose <strong>Remove</strong>). To empty the whole list, use <strong>Clear All</strong> at the top of it. Entering a symbol again moves it back to the top of the list.</p>
 
             <h3>What&rsquo;s kept if I delete the app?</h3>
             <p>On an <strong>iPhone or iPad</strong>, deleting the app erases your list of symbols and your settings on that device. Your <strong>Tradier token is kept</strong> in the Keychain and usually comes back after reinstalling; tap <strong>Remove</strong> in <strong>Settings &rarr; Tradier</strong> first if you don&rsquo;t want that. On the <strong>Mac</strong>, deleting the app keeps everything.</p>
