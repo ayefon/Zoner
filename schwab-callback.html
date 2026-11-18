@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex">
+    <title>Zoner &mdash; Returning to the app</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: #f9fafb;
+            color: #1d1d1f;
+            line-height: 1.6;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        a { color: #007AFF; }
+    </style>
+    <script>
+        // Schwab's sign-in ends here with ?code=...&session=... (or ?error=...).
+        // The page passes that query, unchanged, to Zoner's own address; the
+        // app's sign-in session is waiting for it. Nothing is stored or sent
+        // anywhere else.
+        var target = "zoner-schwab://callback" + window.location.search;
+        window.location.replace(target);
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("open").href = target;
+        });
+    </script>
+</head>
+<body>
+    <p>Returning to Zoner&hellip;</p>
+    <p>If nothing happens, <a id="open" href="#">open Zoner</a>.</p>
+</body>
+</html>
